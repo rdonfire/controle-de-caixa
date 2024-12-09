@@ -1,0 +1,23 @@
+﻿<Window x:Class="ControleDeCaixa.ConfiguracaoBanco"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuração do Banco de Dados" Height="320" Width="400" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Servidor/Instância:" />
+            <TextBox x:Name="txtServidor" />
+
+            <Label Content="Nome do Banco de Dados:" />
+            <TextBox x:Name="txtNomeBanco" />
+
+            <Label Content="Usuário:" />
+            <TextBox x:Name="txtUsuario" />
+
+            <Label Content="Senha:" />
+            <PasswordBox x:Name="txtSenha" />
+
+            <Button Content="Salvar Configuração" Click="Salvar_Click" Width="200" Height="30" HorizontalAlignment="Center" Margin="10" />
+            <Button Content="Cancelar"  Width="100" Height="30" Click="Cancelar_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
